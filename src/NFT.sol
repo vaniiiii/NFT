@@ -8,7 +8,7 @@ import "@openzeppelin/contracts/access/AccessControl.sol";
 import "@openzeppelin/contracts/utils/Counters.sol";
 import "@openzeppelin/contracts/token/common/ERC2981.sol";
 
-contract TEST is
+contract NFT is
     ERC721,
     ERC721Enumerable,
     ERC721Burnable,
@@ -36,7 +36,7 @@ contract TEST is
         _;
     }
 
-    constructor() ERC721("DeGenerousDAO", "DGRS") {
+    constructor() ERC721("REDACTED", "RCTD") {
         _tokenIdCounter.increment(); // start from 1
         _grantRole(DEFAULT_ADMIN_ROLE, msg.sender);
         _grantRole(ADMIN_ROLE, msg.sender);
